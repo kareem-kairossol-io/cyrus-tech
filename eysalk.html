@@ -864,9 +864,9 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
     .pos-hero-title {
       font-size: clamp(36px, 5vw, 58px);
       font-weight: 600;
+      margin-bottom: 16px;
       color: #ffffff;
       line-height: 1.2;
-      margin-bottom: 12px;
     }
     .pos-hero-lead {
   font-size: clamp(15px, 2vw, 20px);
@@ -1280,6 +1280,15 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
   .fn-card h3 { font-size: 14px !important; margin-bottom: 6px !important; }
   .fn-card p { font-size: 11.5px !important; line-height: 1.5 !important; }
 }
+  .page-hero-img {
+    width: 270px;
+    margin: auto
+  }
+  @media (max-width: 767px) {
+    .page-hero-img {
+      width: 180px;
+    }
+  }
   </style>
 </head>
 <body>
@@ -1308,8 +1317,10 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 
 <section class="pos-page-hero">
   <div class="wrap relative z-10 flex flex-col items-center justify-center text-center">
-    <h1 class="pos-hero-title">إيصالك</h1>
-    <p class="pos-hero-lead">لأول مرة جهاز POS مجاني يجمع بين الإيصال الإلكتروني والمدفوعات الإلكترونية في جهاز واحد.</p>
+    <h1 class="pos-hero-title">
+      <img src="./eysalak-logo-light.png" class="page-hero-img" alt="" />
+    </h1>
+    <p class="pos-hero-lead">لأول مرة جهاز POS مجاني يجمع بين الإيصال الإلكتروني والمدفوعات الإلكترونية من خلال<img src="./Fawry-Logo-Vector.svg-.png" style="width: 70px;display: inline-block; margin-right: 10px;margin-top: 4px" /></p>
 
     <!-- Centered Breadcrumb Pill Badge -->
     <div class="breadcrumb-pill inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/5 border border-[#fec064]/40 text-white text-xs font-normal mt-3 hover:border-[#fec064]/70 transition-all duration-300">
